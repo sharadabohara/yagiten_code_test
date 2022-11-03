@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('designation');
             $table->string('contact');
             $table->string('address');
-            $table->string('employee_type')->boolean();
+            $table->string('type');
             $table->timestamps();
         });
     }
