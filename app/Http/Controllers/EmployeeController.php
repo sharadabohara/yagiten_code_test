@@ -33,14 +33,6 @@ class EmployeeController extends Controller
         uuid == p;
         }
         
-        if($request->hasfile('file')){
-
-        $file = $request->file('file');
-        $extension = $file->getClientOriginalExtension();
-        $filename = time().'.'.$extension;
-        $file->move('uploads/students/',$filename);
-        $employee->file=$filename;
-        }
         $employee->save();
         return redirect()->route('view-student');
     }
