@@ -32,7 +32,6 @@ class EmployeeController extends Controller
         if($employee->employee_type == "p"){
         uuid == p;
         }
-        
         $employee->save();
         return redirect()->route('view-student');
     }
